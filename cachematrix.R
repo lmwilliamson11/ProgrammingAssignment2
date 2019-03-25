@@ -24,7 +24,7 @@ cacheSolve <- function(x, ...) {
         message("getting cached matrix")
         return(m)
     }
-    ## returns comupted matrix if no cached matrix is found
+    ## returns computed matrix if no cached matrix is found
     data <- x$get()
     m <- solve(data, ...)
     x$setinv(m)
